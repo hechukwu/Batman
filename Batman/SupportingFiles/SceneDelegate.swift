@@ -10,13 +10,32 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var navController: UINavigationController?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        self.setRootVC(scene: scene)
+    }
+
+    private func setRootVC(scene: UIScene?) {
+        guard let _scene = scene as? UIWindowScene else { return }
+        self.window = UIWindow(windowScene: _scene)
+        if let currentVC = self.window?.rootViewController {
+            debugPrint(currentVC)
+            currentVC.removeFromParent()
+        }
+        let vc = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        let vm = HomeViewModel(apiClient: BatmanClient())
+        vc.viewModel = vm
+        navController = UINavigationController(rootViewController: vc)
+
+        self.window?.rootViewController = navController
+        navController?.setNavigationBarHidden(true, animated: true)
+        navController?.view.backgroundColor = .clear
+        self.window?.rootViewController?.loadViewIfNeeded()
+        self.window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
