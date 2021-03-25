@@ -7,7 +7,7 @@ public class BatmanService {
     // MARK: Private properties
 
     private static let apiKey = OMDB_API_KEY
-    private static let baseURL = "http://www.omdbapi.com/"
+    private static let baseURL = "https://www.omdbapi.com/"
     private var session: URLSession
 
     // MARK: Public properties

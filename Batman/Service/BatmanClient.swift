@@ -1,7 +1,7 @@
 import Foundation
 
 public protocol BatmanClientProtocol {
-    func fetchMovies(completion: @escaping (Result<[Movie], Error>) -> Void)
+    func fetchMovies(completion: @escaping (Result<SearchMovie, Error>) -> Void)
 }
 
 public class BatmanClient: BatmanClientProtocol {
@@ -12,7 +12,7 @@ public class BatmanClient: BatmanClientProtocol {
 
     // MARK: Public methods
 
-    public func fetchMovies(completion: @escaping (Result<[Movie], Error>) -> Void) {
+    public func fetchMovies(completion: @escaping (Result<SearchMovie, Error>) -> Void) {
         let moviesFetcher = service.moviesFetcher
         moviesFetcher.fetchMovies(completion: completion)
     }

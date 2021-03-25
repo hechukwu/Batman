@@ -17,17 +17,30 @@ class HomeViewController: BaseViewController {
         tableView.dataSource = self
         searchBar.delegate = self
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        startAnimatingActivityIndicator()
         title = "Batman movies"
         registerNib()
+        viewModel?.fetchMovies(delegate: self)
     }
 
     private func registerNib() {
         tableView.register(UINib(nibName: HomeCell.nibName, bundle: nil), forCellReuseIdentifier: HomeCell.reuseIdentifier)
     }
+
+    private func startAnimatingActivityIndicator() {
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+    }
+
+    private func stopAnimatingActivityIndicator() {
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
+    }
 }
 
 extension HomeViewController: HomeDelegate, HomeCellDelegate {
     func onGetMovies() {
+        stopAnimatingActivityIndicator()
         guard let vm = viewModel else { return }
         if vm.movies.count > 0 {
             tableView.reloadData()
@@ -37,10 +50,10 @@ extension HomeViewController: HomeDelegate, HomeCellDelegate {
     }
 
     func onTapFavouriteButton(_ movie: Movie, indexPath: IndexPath?) {
-        <#code#>
     }
 
     func onError(message: String) {
+        stopAnimatingActivityIndicator()
         showAlertDialog(title: "Error", message: message)
     }
 }
@@ -74,13 +87,22 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let vm = viewModel else { return 0 }
+        if isSearching {
+            return vm.filteredMoviesList.count
+        }
         return vm.movies.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeCell.reuseIdentifier) as? HomeCell, let vm = viewModel else { return UITableViewCell() }
-        let movie = vm.movies[indexPath.row]
-        cell.configureCell(movie)
+        if isSearching {
+            let movie = vm.filteredMoviesList[indexPath.row]
+            cell.configureCell(movie)
+        } else {
+            let movie = vm.movies[indexPath.row]
+            cell.configureCell(movie)
+        }
+
         cell.indexPath = indexPath
         cell.delegate = self
         return cell
@@ -94,7 +116,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let vm = viewModel else { return }
-        let movie = vm.movies[indexPath.row]
+        var movie: Movie?
+        if isSearching {
+            movie = vm.filteredMoviesList[indexPath.row]
+        } else {
+            movie = vm.movies[indexPath.row]
+        }
         searchBar.searchTextField.text = ""
         searchBar.endEditing(true)
         let vc = HomeDetailViewController(nibName: "HomeDetailViewController", bundle: nil)

@@ -24,7 +24,7 @@ class HomeViewModel {
         batmanClient?.fetchMovies(completion: { result in
             switch result {
             case.success(let movies):
-                self.movies = movies
+                self.movies = movies.Search
                 delegate.onGetMovies()
             case .failure: break
             }

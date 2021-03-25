@@ -15,7 +15,7 @@ public class MovieFetcher {
         self.service = service
     }
 
-    func fetchMovies(completion: @escaping (Result<[Movie], Error>) -> Void) {
+    func fetchMovies(completion: @escaping (Result<SearchMovie, Error>) -> Void) {
 
         let urlSuffix = "?s=Batman&apikey=\(OMDB_API_KEY)"
 

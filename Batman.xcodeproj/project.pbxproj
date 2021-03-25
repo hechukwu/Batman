@@ -27,6 +27,8 @@
 		321083A6D4530D6EA421EEF0C31E735A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042961728B8346FA94AEA8DC0B68EC4C /* HomeViewModel.swift */; };
 		E92C9D8D9CCD63652EC37E1B1642453A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF0B73E6EF61F784699CB4E031A4FAD /* LaunchScreen.storyboard */; };
 		877C49C6F59938F71F983987D8540168 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED9ED03A92267B679211CE134875F4 /* Movie.swift */; };
+		8A6BCAB7E34611DF3152FB36AAC65EAD /* MovieCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1F107B924CF56D5E9D6AE33523442 /* MovieCoreData+CoreDataClass.swift */; };
+		27027FE5E7A1B18EDDB898E2BC1C3C15 /* MovieCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F7562F1B43741930B52A3DA6B2B728 /* MovieCoreData+CoreDataProperties.swift */; };
 		A31D4E21DE469133E69175E4C6A90749 /* MovieFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138CE89054215DD116398CF2A85451E /* MovieFetcher.swift */; };
 		68716DF4953F024FE5499E112B523121 /* Pods_Batman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67792EBD5A79ECE515B153DF1D66494 /* Pods_Batman.framework */; };
 		EB4AB23099BE3D236E1B2AE3CC2B9B2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5CFA5072B37A2D58E5941C8814E2D /* SceneDelegate.swift */; };
@@ -34,14 +36,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B73BE8BD1746D6FB255960696CE8877C /* PBXContainerItemProxy */ = {
+		867E31BAA99CFA0857CA3AF8EDF8EC42 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1E13B3A13ADE2C0B8A767D920B44BACB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 04A4DA1344F6390B571F647088049736;
 			remoteInfo = Batman;
 		};
-		867E31BAA99CFA0857CA3AF8EDF8EC42 /* PBXContainerItemProxy */ = {
+		B73BE8BD1746D6FB255960696CE8877C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1E13B3A13ADE2C0B8A767D920B44BACB /* Project object */;
 			proxyType = 1;
@@ -56,6 +58,7 @@
 		8156108281E3D8062C8D0FA8E3B95306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04237A3ED1E568637134288291239EA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A037502AD3A2B2CAE028A2DCFE47484 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		486AFB9A8275740091C83F40CEF75BE2 /* Batman-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Batman-Bridging-Header.h"; sourceTree = "<group>"; };
 		72DE4A77DE935192F8B69DA15A53E78F /* Batman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Batman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE61AA3F76DB4F2E8DFCE35CCDA5E9DE /* Batman.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Batman.xcdatamodel; sourceTree = "<group>"; };
 		33C39866A7981F3C07D4F8767638CEDD /* BatmanClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatmanClient.swift; sourceTree = "<group>"; };
@@ -73,10 +76,12 @@
 		0401AA5A9A06C9A3C1384B9A422F8F8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7FE032470260EBE664C57C503837E621 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		042961728B8346FA94AEA8DC0B68EC4C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		09C086D65FDB747D6F14AC41552D4C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F7076A93D712A5C1A7B351814DB19DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FCEDDA6E5EFC5173357EBE9ECCDD57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09C086D65FDB747D6F14AC41552D4C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEED9ED03A92267B679211CE134875F4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		B0E1F107B924CF56D5E9D6AE33523442 /* MovieCoreData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieCoreData+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		F2F7562F1B43741930B52A3DA6B2B728 /* MovieCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieCoreData+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		D138CE89054215DD116398CF2A85451E /* MovieFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFetcher.swift; sourceTree = "<group>"; };
 		B7FC540AB0C797F421D3293D5BDF4A59 /* Pods-Batman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Batman.debug.xcconfig"; path = "Target Support Files/Pods-Batman/Pods-Batman.debug.xcconfig"; sourceTree = "<group>"; };
 		7ABE01F5CFC54AC08F47A90B95A3E3CC /* Pods-Batman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Batman.release.xcconfig"; path = "Target Support Files/Pods-Batman/Pods-Batman.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,11 +91,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D33E8D48150CA00EA07ECD1B1CAB61E9 /* Frameworks */ = {
+		3CE0FDE417522FF80C3E3D01B3693BAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68716DF4953F024FE5499E112B523121 /* Pods_Batman.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,10 +105,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3CE0FDE417522FF80C3E3D01B3693BAA /* Frameworks */ = {
+		D33E8D48150CA00EA07ECD1B1CAB61E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68716DF4953F024FE5499E112B523121 /* Pods_Batman.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,14 +128,28 @@
 			);
 			sourceTree = "<group>";
 		};
-		6B2EF90078CB666FBC69779568E6268D /* Products */ = {
+		29BB0876F34CDF56AD01CF5B56D1A50B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				72DE4A77DE935192F8B69DA15A53E78F /* Batman.app */,
-				FF93D3C6BA60BB24A74F9381519C27B4 /* BatmanTests.xctest */,
-				45552F9E6360B1FB00339798AA5F3195 /* BatmanUITests.xctest */,
 			);
-			name = Products;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2B64B956BE9A75EB78D940684FD20E12 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		48BD5CB0ADB1CBCAFD8E7A2A1C7FCD1C /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				53ACFBAE4F88D2BC42CEF91366BE81FD /* Cell */,
+				0401AA5A9A06C9A3C1384B9A422F8F8C /* HomeViewController.swift */,
+				7FE032470260EBE664C57C503837E621 /* HomeViewController.xib */,
+			);
+			path = Overview;
 			sourceTree = "<group>";
 		};
 		509E7E5FBEBAD5E3E90BD01E4CE5FCEF /* Batman */ = {
@@ -145,27 +164,36 @@
 				58D7A97E8BD7C4BE8167F3EAB3A85FFF /* Shared */,
 				E5B849061296F1972FADF537D4F514EC /* SupportingFiles */,
 				86BBB6DF8383919063AD35DB5D302754 /* Utils */,
+				486AFB9A8275740091C83F40CEF75BE2 /* Batman-Bridging-Header.h */,
 				1F7076A93D712A5C1A7B351814DB19DC /* Info.plist */,
 			);
 			path = Batman;
 			sourceTree = "<group>";
 		};
-		E5B849061296F1972FADF537D4F514EC /* SupportingFiles */ = {
+		53ACFBAE4F88D2BC42CEF91366BE81FD /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				1FBED658422E4D02818BE35E7C6C913A /* AppDelegate.swift */,
-				5BA5CFA5072B37A2D58E5941C8814E2D /* SceneDelegate.swift */,
+				94C738110DAAD57DD3B610CC3776FF51 /* HomeCell.swift */,
+				0AB4BC5F21FDF7D17857876BF5A9608C /* HomeCell.xib */,
 			);
-			path = SupportingFiles;
+			path = Cell;
 			sourceTree = "<group>";
 		};
-		621185563E74306AB7A3BB9263558AA3 /* Data */ = {
+		53B004B00342FA111EC60273617EF9FC /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				07379F8F33BF8F33A07F8AC2BA021AB0 /* Batman.xcdatamodeld */,
-				6A4249EF096FEDA7BACCFFAFA6D03B33 /* CoreDataStack.swift */,
+				8A037502AD3A2B2CAE028A2DCFE47484 /* BaseViewController.swift */,
 			);
-			path = Data;
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5600ADF7FF952537C057443E15AFB6E8 /* BatmanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2C15D7C1F84BC730F5EE432E564C004 /* BatmanUITests.swift */,
+				09C086D65FDB747D6F14AC41552D4C75 /* Info.plist */,
+			);
+			path = BatmanUITests;
 			sourceTree = "<group>";
 		};
 		57D0E15832EDF9B6ED72102E1C4CB250 /* Resources */ = {
@@ -175,6 +203,14 @@
 				8EF0B73E6EF61F784699CB4E031A4FAD /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		58D7A97E8BD7C4BE8167F3EAB3A85FFF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				53B004B00342FA111EC60273617EF9FC /* Base */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		5B6BB84E5843BE82CB1A2B2041192DC6 /* Home */ = {
@@ -187,91 +223,23 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		58D7A97E8BD7C4BE8167F3EAB3A85FFF /* Shared */ = {
+		5D02DE2BCBAAB2CAD7FD2496103A84D7 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				53B004B00342FA111EC60273617EF9FC /* Base */,
+				FBD1430F66FD0E3DD597AE469683D4D3 /* Constants.swift */,
 			);
-			path = Shared;
+			path = App;
 			sourceTree = "<group>";
 		};
-		53B004B00342FA111EC60273617EF9FC /* Base */ = {
+		621185563E74306AB7A3BB9263558AA3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				8A037502AD3A2B2CAE028A2DCFE47484 /* BaseViewController.swift */,
+				07379F8F33BF8F33A07F8AC2BA021AB0 /* Batman.xcdatamodeld */,
+				6A4249EF096FEDA7BACCFFAFA6D03B33 /* CoreDataStack.swift */,
+				B0E1F107B924CF56D5E9D6AE33523442 /* MovieCoreData+CoreDataClass.swift */,
+				F2F7562F1B43741930B52A3DA6B2B728 /* MovieCoreData+CoreDataProperties.swift */,
 			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		53ACFBAE4F88D2BC42CEF91366BE81FD /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				94C738110DAAD57DD3B610CC3776FF51 /* HomeCell.swift */,
-				0AB4BC5F21FDF7D17857876BF5A9608C /* HomeCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		B444505A0FBDB112C65E28D6C9779323 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				A993A9D170CA615C68D9C8D0CD43A351 /* UITableViewCell */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		A993A9D170CA615C68D9C8D0CD43A351 /* UITableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				FB688F64C1625D5128B9208ED16B26C9 /* UITableViewCell+NibName.swift */,
-			);
-			path = UITableViewCell;
-			sourceTree = "<group>";
-		};
-		48BD5CB0ADB1CBCAFD8E7A2A1C7FCD1C /* Overview */ = {
-			isa = PBXGroup;
-			children = (
-				53ACFBAE4F88D2BC42CEF91366BE81FD /* Cell */,
-				0401AA5A9A06C9A3C1384B9A422F8F8C /* HomeViewController.swift */,
-				7FE032470260EBE664C57C503837E621 /* HomeViewController.xib */,
-			);
-			path = Overview;
-			sourceTree = "<group>";
-		};
-		DC438176C415F6B1E09CF26ACD9E3C47 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				B208F6DE492AA8C846974B0CFF3EB817 /* Utility */,
-				33C39866A7981F3C07D4F8767638CEDD /* BatmanClient.swift */,
-				CB8AB8C0BECBB885DBC76C3D1A7D0178 /* BatmanService.swift */,
-				D138CE89054215DD116398CF2A85451E /* MovieFetcher.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		B208F6DE492AA8C846974B0CFF3EB817 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				2262D0418E01AAE26939E65B99B6FFBD /* AppError.swift */,
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
-		A8415A5F551AB5AFB55CD8CDC0C46FD2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				DEED9ED03A92267B679211CE134875F4 /* Movie.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A2475ED58C4BFB4F8F9611C37C76F1FB /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				120E8FFBBA63640F0BF74F156F130D76 /* HomeDetailViewController.swift */,
-				D93152CA6FF4DDAD213E726C993E436B /* HomeDetailViewController.xib */,
-			);
-			path = Detail;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		67740E612B3E21964760E5668B75688C /* BatmanTests */ = {
@@ -285,43 +253,14 @@
 			path = BatmanTests;
 			sourceTree = "<group>";
 		};
-		5600ADF7FF952537C057443E15AFB6E8 /* BatmanUITests */ = {
+		6B2EF90078CB666FBC69779568E6268D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2C15D7C1F84BC730F5EE432E564C004 /* BatmanUITests.swift */,
-				09C086D65FDB747D6F14AC41552D4C75 /* Info.plist */,
+				72DE4A77DE935192F8B69DA15A53E78F /* Batman.app */,
+				FF93D3C6BA60BB24A74F9381519C27B4 /* BatmanTests.xctest */,
+				45552F9E6360B1FB00339798AA5F3195 /* BatmanUITests.xctest */,
 			);
-			path = BatmanUITests;
-			sourceTree = "<group>";
-		};
-		2B64B956BE9A75EB78D940684FD20E12 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
-		29BB0876F34CDF56AD01CF5B56D1A50B /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		86BBB6DF8383919063AD35DB5D302754 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				5D02DE2BCBAAB2CAD7FD2496103A84D7 /* App */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		5D02DE2BCBAAB2CAD7FD2496103A84D7 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				FBD1430F66FD0E3DD597AE469683D4D3 /* Constants.swift */,
-			);
-			path = App;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		84F24EF35D34BBAAAA0D8E63FFE273A2 /* Pods */ = {
@@ -333,12 +272,81 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		86BBB6DF8383919063AD35DB5D302754 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5D02DE2BCBAAB2CAD7FD2496103A84D7 /* App */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		9DC76B66B10939F1943B84DA8A2CAEF2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				F67792EBD5A79ECE515B153DF1D66494 /* Pods_Batman.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2475ED58C4BFB4F8F9611C37C76F1FB /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				120E8FFBBA63640F0BF74F156F130D76 /* HomeDetailViewController.swift */,
+				D93152CA6FF4DDAD213E726C993E436B /* HomeDetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		A8415A5F551AB5AFB55CD8CDC0C46FD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEED9ED03A92267B679211CE134875F4 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A993A9D170CA615C68D9C8D0CD43A351 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FB688F64C1625D5128B9208ED16B26C9 /* UITableViewCell+NibName.swift */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		B208F6DE492AA8C846974B0CFF3EB817 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2262D0418E01AAE26939E65B99B6FFBD /* AppError.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B444505A0FBDB112C65E28D6C9779323 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A993A9D170CA615C68D9C8D0CD43A351 /* UITableViewCell */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DC438176C415F6B1E09CF26ACD9E3C47 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B208F6DE492AA8C846974B0CFF3EB817 /* Utility */,
+				33C39866A7981F3C07D4F8767638CEDD /* BatmanClient.swift */,
+				CB8AB8C0BECBB885DBC76C3D1A7D0178 /* BatmanService.swift */,
+				D138CE89054215DD116398CF2A85451E /* MovieFetcher.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E5B849061296F1972FADF537D4F514EC /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1FBED658422E4D02818BE35E7C6C913A /* AppDelegate.swift */,
+				5BA5CFA5072B37A2D58E5941C8814E2D /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +418,7 @@
 				TargetAttributes = {
 					04A4DA1344F6390B571F647088049736 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					BB2984E5F68428F0513E32209B663852 = {
 						CreatedOnToolsVersion = 12.4;
@@ -442,15 +451,10 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E0E91A20A9FA0AAF1E4CE0C0B6343791 /* Resources */ = {
+		4F3D62A9C73C2C05585BFD821EB0AE9B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7ED9979B2D3440D3C33A6AF61834978 /* Assets.xcassets in Resources */,
-				AC2656E61433B0EB736EF134ECA03465 /* HomeCell.xib in Resources */,
-				AC7FEBD09E9E6A78F62CB6853B3532AA /* HomeDetailViewController.xib in Resources */,
-				D2E27C0A8491C8620EA2443BCB5C106B /* HomeViewController.xib in Resources */,
-				E92C9D8D9CCD63652EC37E1B1642453A /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,10 +465,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4F3D62A9C73C2C05585BFD821EB0AE9B /* Resources */ = {
+		E0E91A20A9FA0AAF1E4CE0C0B6343791 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7ED9979B2D3440D3C33A6AF61834978 /* Assets.xcassets in Resources */,
+				AC2656E61433B0EB736EF134ECA03465 /* HomeCell.xib in Resources */,
+				AC7FEBD09E9E6A78F62CB6853B3532AA /* HomeDetailViewController.xib in Resources */,
+				D2E27C0A8491C8620EA2443BCB5C106B /* HomeViewController.xib in Resources */,
+				E92C9D8D9CCD63652EC37E1B1642453A /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +522,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AA7EA6245E38C361D9A779FEA607212A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B90EDE76E0759A5DE21251C87E89784 /* BatmanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0BB50372D58C933BEBC03C25FCD5CC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -530,6 +547,8 @@
 				386B29ACA9DD0770A8B5FC55196D4F87 /* HomeViewController.swift in Sources */,
 				321083A6D4530D6EA421EEF0C31E735A /* HomeViewModel.swift in Sources */,
 				877C49C6F59938F71F983987D8540168 /* Movie.swift in Sources */,
+				8A6BCAB7E34611DF3152FB36AAC65EAD /* MovieCoreData+CoreDataClass.swift in Sources */,
+				27027FE5E7A1B18EDDB898E2BC1C3C15 /* MovieCoreData+CoreDataProperties.swift in Sources */,
 				A31D4E21DE469133E69175E4C6A90749 /* MovieFetcher.swift in Sources */,
 				EB4AB23099BE3D236E1B2AE3CC2B9B2C /* SceneDelegate.swift in Sources */,
 				6B384771826C3E1AA0A958644E354717 /* UITableViewCell+NibName.swift in Sources */,
@@ -544,26 +563,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA7EA6245E38C361D9A779FEA607212A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4B90EDE76E0759A5DE21251C87E89784 /* BatmanUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DA051D848E0CD27A75226F3EC6750E02 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 04A4DA1344F6390B571F647088049736 /* Batman */;
-			targetProxy = B73BE8BD1746D6FB255960696CE8877C /* PBXContainerItemProxy */;
-		};
 		831472D51DC8C7D3547C1F0B26387619 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 04A4DA1344F6390B571F647088049736 /* Batman */;
 			targetProxy = 867E31BAA99CFA0857CA3AF8EDF8EC42 /* PBXContainerItemProxy */;
+		};
+		DA051D848E0CD27A75226F3EC6750E02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04A4DA1344F6390B571F647088049736 /* Batman */;
+			targetProxy = B73BE8BD1746D6FB255960696CE8877C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -640,6 +651,131 @@
 			};
 			name = Debug;
 		};
+		21B98043713600D81EA14770FC59B2C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPNBUYVTC7;
+				INFOPLIST_FILE = BatmanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = henry.BatmanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Batman;
+			};
+			name = Debug;
+		};
+		40FE1DD04EF5E6EC18CD8E1CFB2E7024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPNBUYVTC7;
+				INFOPLIST_FILE = BatmanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = henry.BatmanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Batman;
+			};
+			name = Release;
+		};
+		49AE904E6F594A20EE9E0385CA7FEE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPNBUYVTC7;
+				INFOPLIST_FILE = BatmanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = henry.BatmanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Batman.app/Batman";
+			};
+			name = Release;
+		};
+		4B8FB42ABDAF86283A94D72AA7769ED0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ABE01F5CFC54AC08F47A90B95A3E3CC /* Pods-Batman.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPNBUYVTC7;
+				INFOPLIST_FILE = Batman/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OMDB_API_KEY = 5cc599ee;
+				PRODUCT_BUNDLE_IDENTIFIER = henry.Batman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Batman/Batman-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6C76914655294464A56A3D9205DEAD93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7FC540AB0C797F421D3293D5BDF4A59 /* Pods-Batman.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPNBUYVTC7;
+				INFOPLIST_FILE = Batman/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OMDB_API_KEY = 5cc599ee;
+				PRODUCT_BUNDLE_IDENTIFIER = henry.Batman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Batman/Batman-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B882F90E3E9B9DDC2DDED751FA827986 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPNBUYVTC7;
+				INFOPLIST_FILE = BatmanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = henry.BatmanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Batman.app/Batman";
+			};
+			name = Debug;
+		};
 		F74C29A18787CB77BD86A95D30B5E07E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -695,138 +831,9 @@
 			};
 			name = Release;
 		};
-		6C76914655294464A56A3D9205DEAD93 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7FC540AB0C797F421D3293D5BDF4A59 /* Pods-Batman.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JPNBUYVTC7;
-				INFOPLIST_FILE = Batman/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OMDB_API_KEY = 5cc599ee;
-				PRODUCT_BUNDLE_IDENTIFIER = henry.Batman;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4B8FB42ABDAF86283A94D72AA7769ED0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7ABE01F5CFC54AC08F47A90B95A3E3CC /* Pods-Batman.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JPNBUYVTC7;
-				INFOPLIST_FILE = Batman/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OMDB_API_KEY = 5cc599ee;
-				PRODUCT_BUNDLE_IDENTIFIER = henry.Batman;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		B882F90E3E9B9DDC2DDED751FA827986 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JPNBUYVTC7;
-				INFOPLIST_FILE = BatmanTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = henry.BatmanTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Batman.app/Batman";
-			};
-			name = Debug;
-		};
-		49AE904E6F594A20EE9E0385CA7FEE9C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JPNBUYVTC7;
-				INFOPLIST_FILE = BatmanTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = henry.BatmanTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Batman.app/Batman";
-			};
-			name = Release;
-		};
-		21B98043713600D81EA14770FC59B2C8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JPNBUYVTC7;
-				INFOPLIST_FILE = BatmanUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = henry.BatmanUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Batman;
-			};
-			name = Debug;
-		};
-		40FE1DD04EF5E6EC18CD8E1CFB2E7024 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JPNBUYVTC7;
-				INFOPLIST_FILE = BatmanUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = henry.BatmanUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Batman;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		534F47ED22E40221B03C2F57EA06C605 /* Build configuration list for PBXProject "Batman" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0E61C89DF7F1DA1556DFCCE3CB468D85 /* Debug */,
-				F74C29A18787CB77BD86A95D30B5E07E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		0A4BF1AF6BD6DC4C65C2BFDD00DA7D04 /* Build configuration list for PBXNativeTarget "Batman" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -836,11 +843,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0D41541C6FEB2E76D05C6DA0B4732F6 /* Build configuration list for PBXNativeTarget "BatmanTests" */ = {
+		534F47ED22E40221B03C2F57EA06C605 /* Build configuration list for PBXProject "Batman" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B882F90E3E9B9DDC2DDED751FA827986 /* Debug */,
-				49AE904E6F594A20EE9E0385CA7FEE9C /* Release */,
+				0E61C89DF7F1DA1556DFCCE3CB468D85 /* Debug */,
+				F74C29A18787CB77BD86A95D30B5E07E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -850,6 +857,15 @@
 			buildConfigurations = (
 				21B98043713600D81EA14770FC59B2C8 /* Debug */,
 				40FE1DD04EF5E6EC18CD8E1CFB2E7024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0D41541C6FEB2E76D05C6DA0B4732F6 /* Build configuration list for PBXNativeTarget "BatmanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B882F90E3E9B9DDC2DDED751FA827986 /* Debug */,
+				49AE904E6F594A20EE9E0385CA7FEE9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -15,7 +15,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeDetailViewController" customModule="Batman" customModuleProvider="target">
             <connections>
+                <outlet property="movieTitleLabel" destination="9P0-ZZ-diW" id="Hpa-Kc-w4I"/>
+                <outlet property="posterImageview" destination="Bgx-fd-wfk" id="bgw-ql-a5h"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yearOfProductionLabel" destination="UMK-pG-3Ed" id="7fZ-QQ-tzY"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -27,7 +30,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Efm-VV-6yd">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="396"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="356"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qhl-oY-spi">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="25"/>
@@ -63,18 +66,18 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOz-Ek-yBi">
-                                    <rect key="frame" x="16" y="325" width="382" height="50"/>
+                                    <rect key="frame" x="16" y="325" width="382" height="10"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="50" id="c4v-Id-COW"/>
+                                        <constraint firstAttribute="height" constant="10" id="c4v-Id-COW"/>
                                     </constraints>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMK-pG-3Ed">
-                                    <rect key="frame" x="16" y="385" width="382" height="0.0"/>
+                                    <rect key="frame" x="16" y="345" width="382" height="0.0"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deF-BC-JW0">
-                                    <rect key="frame" x="87" y="395" width="240" height="1"/>
+                                    <rect key="frame" x="87" y="355" width="240" height="1"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="314-xQ-JMc"/>
