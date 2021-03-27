@@ -6,7 +6,7 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tableViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
+
     public var viewModel: HomeViewModel? { didSet { bindViewModel() } }
 
     var isSearching = false
@@ -159,6 +159,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         searchBar.searchTextField.text = ""
         searchBar.endEditing(true)
         let vc = HomeDetailViewController(nibName: "HomeDetailViewController", bundle: nil)
+        vc.viewModel = vm
         vc.movie = movie
         navigationController?.pushViewController(vc, animated: true)
     }

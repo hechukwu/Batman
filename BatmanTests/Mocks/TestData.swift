@@ -15,6 +15,7 @@ class TestData {
     }
 
     static var movie: Movie {
+
         return Movie(Title: "Batman returns",
                      Year: "1992",
                      Rated: nil,
@@ -26,19 +27,11 @@ class TestData {
                      Actors: nil,
                      Language: nil,
                      Country: nil,
+                     Plot: nil,
                      Awards: nil,
                      Poster: nil,
-                     Metascore: nil,
-                     imdbRating: nil,
-                     imdbVotes: nil,
                      imdbID: nil,
-                     Type: nil,
-                     DVD: nil,
-                     BoxOffice: nil,
-                     Production: nil,
-                     Website: nil,
-                     Response: nil,
-                     isFavourite: true)
+                     Type: nil)
     }
 
     static var movieArray: [Movie] {

@@ -3,5 +3,5 @@ public struct SearchMovie: Codable {
 }
 
 struct Movie: Codable, Equatable {
-    var Title, Year, Rated, Released, Runtime, Genre, Director, Writer, Actors, Language, Country, Awards, Poster, imdbID, `Type`: String?
+    var Title, Year, Rated, Released, Runtime, Genre, Director, Writer, Actors, Language, Country, Plot, Awards, Poster, imdbID, `Type`: String?
 }

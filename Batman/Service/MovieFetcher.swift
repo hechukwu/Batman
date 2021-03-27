@@ -25,6 +25,15 @@ public class MovieFetcher {
         }
     }
 
+    func fetchSingleMovie(_ imdbID: String, completion: @escaping (Result<Movie, Error>) -> Void) {
+        let urlSuffix = "?i=\(imdbID)&apikey=\(OMDB_API_KEY)"
+
+        service?.sendGetRequest(table: urlSuffix,
+                                offset: offset) { [weak self] result in
+            self?.deserialize(result: result, completion: completion)
+        }
+    }
+
     // A helper function to parse the data
 
     private func deserialize<T: Decodable>(result: Result<Data, Error>, completion: ((Result<T, Error>) -> Void)? = nil) {

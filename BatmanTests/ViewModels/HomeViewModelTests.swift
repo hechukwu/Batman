@@ -35,8 +35,8 @@ class HomeViewModelTests: XCTestCase, HomeDelegate {
 
         if let movie = viewModel?.movies.first {
             XCTAssert(movie.Title == "Batman returns")
-            }
         }
+    }
 
     func onGetMovies() {}
     func onError(_ message: String) {}

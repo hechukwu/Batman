@@ -13,4 +13,8 @@ class BatmanClientTest: BatmanClientProtocol {
     func fetchMovies(completion: @escaping (Result<SearchMovie, Error>) -> Void) {
         completion(.success(TestData.searchMovie))
     }
+
+    func fetchSingleMovie(_ imdbID: String, completion: @escaping (Result<Movie, Error>) -> Void) {
+        completion(.success(TestData.movie))
+    }
 }
