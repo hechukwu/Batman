@@ -2,7 +2,7 @@ import Foundation
 
 protocol HomeDelegate {
     func onGetMovies()
-    func onError(message: String)
+    func onError(_ message: String)
 }
 
 class HomeViewModel {
@@ -12,6 +12,9 @@ class HomeViewModel {
     public let batmanClient: BatmanClientProtocol?
     public var movies: [Movie] = []
     public var filteredMoviesList: [Movie] = []
+    public var favoriteMovies: [Movie] = []
+
+    let coredata = CoreDataStack()
 
     public init(apiClient: BatmanClientProtocol) {
         self.batmanClient = apiClient
@@ -26,9 +29,26 @@ class HomeViewModel {
             case.success(let movies):
                 self.movies = movies.Search
                 delegate.onGetMovies()
-            case .failure: break
+            case .failure(let error): delegate.onError(error.localizedDescription)
             }
         })
+    }
+
+    func fetchMoviesFromCoredata() {
+        if let controller = coredata.getMovieController() {
+            let contents: [Movie] = controller.map {
+                $0.toMovieModel()
+            }
+            self.favoriteMovies = contents
+        }
+    }
+
+    func addToFavList(_ movie: Movie) {
+        _ = coredata.upsertMovie(movie, save: true)
+    }
+
+    func removeFromFavList(_ movie: Movie) {
+        coredata.deleteMovie(movie, save: true)
     }
 
 }

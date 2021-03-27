@@ -13,6 +13,7 @@
 		8CA6453A8EB40F407CADD499079FC2AF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A037502AD3A2B2CAE028A2DCFE47484 /* BaseViewController.swift */; };
 		77AFE7CA8C5FE1FCC13CCB101FB81CE8 /* Batman.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07379F8F33BF8F33A07F8AC2BA021AB0 /* Batman.xcdatamodeld */; };
 		DBC9F002AA9C9073C4FD8C9220019144 /* BatmanClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C39866A7981F3C07D4F8767638CEDD /* BatmanClient.swift */; };
+		56117E66314C8ED6F4097A8BA62965DF /* BatmanClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A28E484C5E96D9B38A0608AB0B71BC1 /* BatmanClientTest.swift */; };
 		4E70F1516E4E101D349B3EDF196F2532 /* BatmanService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8AB8C0BECBB885DBC76C3D1A7D0178 /* BatmanService.swift */; };
 		B49774D687CC92C3FC165C172FFF14C1 /* BatmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF082EBA3170F1DB8CCB936A334C398 /* BatmanTests.swift */; };
 		4B90EDE76E0759A5DE21251C87E89784 /* BatmanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C15D7C1F84BC730F5EE432E564C004 /* BatmanUITests.swift */; };
@@ -25,6 +26,7 @@
 		386B29ACA9DD0770A8B5FC55196D4F87 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401AA5A9A06C9A3C1384B9A422F8F8C /* HomeViewController.swift */; };
 		D2E27C0A8491C8620EA2443BCB5C106B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE032470260EBE664C57C503837E621 /* HomeViewController.xib */; };
 		321083A6D4530D6EA421EEF0C31E735A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042961728B8346FA94AEA8DC0B68EC4C /* HomeViewModel.swift */; };
+		B293D8FB662C73DA54CDCFC4D5153073 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A11C5C8E361B6E3B0EB6AF6A446B27 /* HomeViewModelTests.swift */; };
 		E92C9D8D9CCD63652EC37E1B1642453A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF0B73E6EF61F784699CB4E031A4FAD /* LaunchScreen.storyboard */; };
 		877C49C6F59938F71F983987D8540168 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED9ED03A92267B679211CE134875F4 /* Movie.swift */; };
 		8A6BCAB7E34611DF3152FB36AAC65EAD /* MovieCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1F107B924CF56D5E9D6AE33523442 /* MovieCoreData+CoreDataClass.swift */; };
@@ -32,6 +34,7 @@
 		A31D4E21DE469133E69175E4C6A90749 /* MovieFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138CE89054215DD116398CF2A85451E /* MovieFetcher.swift */; };
 		68716DF4953F024FE5499E112B523121 /* Pods_Batman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67792EBD5A79ECE515B153DF1D66494 /* Pods_Batman.framework */; };
 		EB4AB23099BE3D236E1B2AE3CC2B9B2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5CFA5072B37A2D58E5941C8814E2D /* SceneDelegate.swift */; };
+		18F31276361C748A7C02F672FDD8F1DC /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D67C62D4A88157A6A86C2823801BA2B /* TestData.swift */; };
 		6B384771826C3E1AA0A958644E354717 /* UITableViewCell+NibName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB688F64C1625D5128B9208ED16B26C9 /* UITableViewCell+NibName.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +65,7 @@
 		72DE4A77DE935192F8B69DA15A53E78F /* Batman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Batman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE61AA3F76DB4F2E8DFCE35CCDA5E9DE /* Batman.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Batman.xcdatamodel; sourceTree = "<group>"; };
 		33C39866A7981F3C07D4F8767638CEDD /* BatmanClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatmanClient.swift; sourceTree = "<group>"; };
+		8A28E484C5E96D9B38A0608AB0B71BC1 /* BatmanClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatmanClientTest.swift; sourceTree = "<group>"; };
 		CB8AB8C0BECBB885DBC76C3D1A7D0178 /* BatmanService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatmanService.swift; sourceTree = "<group>"; };
 		0BF082EBA3170F1DB8CCB936A334C398 /* BatmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatmanTests.swift; sourceTree = "<group>"; };
 		FF93D3C6BA60BB24A74F9381519C27B4 /* BatmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +80,7 @@
 		0401AA5A9A06C9A3C1384B9A422F8F8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7FE032470260EBE664C57C503837E621 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		042961728B8346FA94AEA8DC0B68EC4C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B0A11C5C8E361B6E3B0EB6AF6A446B27 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		09C086D65FDB747D6F14AC41552D4C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F7076A93D712A5C1A7B351814DB19DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FCEDDA6E5EFC5173357EBE9ECCDD57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +92,7 @@
 		7ABE01F5CFC54AC08F47A90B95A3E3CC /* Pods-Batman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Batman.release.xcconfig"; path = "Target Support Files/Pods-Batman/Pods-Batman.release.xcconfig"; sourceTree = "<group>"; };
 		F67792EBD5A79ECE515B153DF1D66494 /* Pods_Batman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Batman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA5CFA5072B37A2D58E5941C8814E2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8D67C62D4A88157A6A86C2823801BA2B /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		FB688F64C1625D5128B9208ED16B26C9 /* UITableViewCell+NibName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+NibName.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +137,7 @@
 		29BB0876F34CDF56AD01CF5B56D1A50B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B0A11C5C8E361B6E3B0EB6AF6A446B27 /* HomeViewModelTests.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -138,6 +145,8 @@
 		2B64B956BE9A75EB78D940684FD20E12 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				8A28E484C5E96D9B38A0608AB0B71BC1 /* BatmanClientTest.swift */,
+				8D67C62D4A88157A6A86C2823801BA2B /* TestData.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -559,7 +568,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56117E66314C8ED6F4097A8BA62965DF /* BatmanClientTest.swift in Sources */,
 				B49774D687CC92C3FC165C172FFF14C1 /* BatmanTests.swift in Sources */,
+				B293D8FB662C73DA54CDCFC4D5153073 /* HomeViewModelTests.swift in Sources */,
+				18F31276361C748A7C02F672FDD8F1DC /* TestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

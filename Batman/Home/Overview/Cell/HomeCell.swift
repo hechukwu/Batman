@@ -1,7 +1,12 @@
 import UIKit
 
 protocol HomeCellDelegate: class {
-    func onTapFavouriteButton(_ movie: Movie, indexPath: IndexPath?)
+    func onTapFavouriteButton(_ movie: Movie, isFavourite: Favorite?, indexPath: IndexPath?)
+}
+
+enum Favorite {
+    case isFavourite
+    case notFavorite
 }
 
 class HomeCell: UITableViewCell, NibLoadable {
@@ -15,6 +20,7 @@ class HomeCell: UITableViewCell, NibLoadable {
     weak var delegate: HomeCellDelegate?
     var indexPath: IndexPath?
     var movie: Movie?
+    var isFavourite: Favorite?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,7 +38,7 @@ class HomeCell: UITableViewCell, NibLoadable {
 
     @IBAction func favouriteButtonTapped(_ sender: Any) {
         if let movie = movie {
-            delegate?.onTapFavouriteButton(movie, indexPath: indexPath)
+            delegate?.onTapFavouriteButton(movie, isFavourite: isFavourite, indexPath: indexPath)
         }
     }
 }

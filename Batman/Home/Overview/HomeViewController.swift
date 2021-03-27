@@ -16,10 +16,14 @@ class HomeViewController: BaseViewController {
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
+        tableView.backgroundColor = .clear
+        tableView.isHidden = true
+        tableView.tableFooterView = UIView()
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         startAnimatingActivityIndicator()
         title = "Batman movies"
         registerNib()
+        viewModel?.fetchMoviesFromCoredata()
         viewModel?.fetchMovies(delegate: self)
     }
 
@@ -43,16 +47,32 @@ extension HomeViewController: HomeDelegate, HomeCellDelegate {
         stopAnimatingActivityIndicator()
         guard let vm = viewModel else { return }
         if vm.movies.count > 0 {
+            tableView.isHidden = false
             tableView.reloadData()
         } else {
             tableView.isHidden = true
         }
     }
 
-    func onTapFavouriteButton(_ movie: Movie, indexPath: IndexPath?) {
+    func onTapFavouriteButton(_ movie: Movie, isFavourite: Favorite?, indexPath: IndexPath?) {
+        guard let indexPath = indexPath,
+              let cell = tableView.cellForRow(at: indexPath) as? HomeCell,
+              let isFavorite = cell.isFavourite,
+              let vm = viewModel
+                else { return }
+        switch isFavorite {
+        case .isFavourite:
+            cell.isFavourite = .notFavorite
+            vm.removeFromFavList(movie)
+        case .notFavorite:
+            cell.isFavourite = .isFavourite
+            vm.addToFavList(movie)
+        }
+        let imageName = isFavourite == .isFavourite ? "no Favorite" : "Fovorite"
+        cell.favouriteButton.setImage(UIImage(named: imageName), for: .normal)
     }
 
-    func onError(message: String) {
+    func onError(_ message: String) {
         stopAnimatingActivityIndicator()
         showAlertDialog(title: "Error", message: message)
     }
@@ -97,9 +117,23 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeCell.reuseIdentifier) as? HomeCell, let vm = viewModel else { return UITableViewCell() }
         if isSearching {
             let movie = vm.filteredMoviesList[indexPath.row]
+            if vm.favoriteMovies.contains(movie) {
+                cell.favouriteButton.setImage(UIImage(named: "Fovorite"), for: .normal)
+                cell.isFavourite = .isFavourite
+            } else {
+                cell.isFavourite = .notFavorite
+                cell.favouriteButton.setImage(UIImage(named: "no Favorite"), for: .normal)
+            }
             cell.configureCell(movie)
         } else {
             let movie = vm.movies[indexPath.row]
+            if vm.favoriteMovies.contains(movie) {
+                cell.isFavourite = .isFavourite
+                cell.favouriteButton.setImage(UIImage(named: "Fovorite"), for: .normal)
+            } else {
+                cell.isFavourite = .notFavorite
+                cell.favouriteButton.setImage(UIImage(named: "no Favorite"), for: .normal)
+            }
             cell.configureCell(movie)
         }
 
