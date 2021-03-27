@@ -32,7 +32,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         navController = UINavigationController(rootViewController: vc)
 
         self.window?.rootViewController = navController
-        navController?.setNavigationBarHidden(true, animated: true)
         navController?.view.backgroundColor = .clear
         self.window?.rootViewController?.loadViewIfNeeded()
         self.window?.makeKeyAndVisible()
