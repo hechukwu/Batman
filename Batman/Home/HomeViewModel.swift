@@ -2,7 +2,14 @@ import Foundation
 
 protocol HomeDelegate {
     func onGetMovies()
+    func onGetSingleMovie(_ movie: Movie?)
     func onError(_ message: String)
+}
+
+extension HomeDelegate {
+    func onGetMovies() {}
+    func onGetSingleMovie(_ movie: Movie?) {}
+    func onError(_ message: String) {}
 }
 
 class HomeViewModel {
@@ -30,6 +37,16 @@ class HomeViewModel {
                 self.movies = movies.Search
                 delegate.onGetMovies()
             case .failure(let error): delegate.onError(error.localizedDescription)
+            }
+        })
+    }
+
+    func fetchMovie(_ imdbID: String, delegate: HomeDelegate) {
+
+        batmanClient?.fetchSingleMovie(imdbID, completion: { result in
+            switch result {
+            case .success(let movie): delegate.onGetSingleMovie(movie)
+            case .failure: break
             }
         })
     }
