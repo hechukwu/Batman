@@ -17,6 +17,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         self.setRootVC(scene: scene)
+        if CommandLine.arguments.contains("--uitesting") {
+            resetState()
+        }
     }
 
     private func setRootVC(scene: UIScene?) {
@@ -35,6 +38,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         navController?.view.backgroundColor = .clear
         self.window?.rootViewController?.loadViewIfNeeded()
         self.window?.makeKeyAndVisible()
+    }
+
+    func resetState() {
+        let defaultsName = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: defaultsName)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
