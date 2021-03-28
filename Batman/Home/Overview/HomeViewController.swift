@@ -25,6 +25,7 @@ class HomeViewController: BaseViewController {
         registerNib()
         viewModel?.fetchMoviesFromCoredata()
         viewModel?.fetchMovies(delegate: self)
+        searchBar.accessibilityIdentifier = "searchBar"
     }
 
     private func registerNib() {
